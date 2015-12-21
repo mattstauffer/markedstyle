@@ -5,10 +5,8 @@
 	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.1.*",
-		"juy/profiler": "1.0.*",
 		"kmd/logviewer": "1.1.*",
-		"rtablada/package-installer": "0.1.*",
-		"bugsnag/bugsnag-laravel": "1.0.*"
+		"patchwork/utf8": "~1.1"
 	},
 	"require-dev": {
 		"way/guard-laravel": "*",
