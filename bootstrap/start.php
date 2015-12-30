@@ -41,6 +41,10 @@ $env = $app->detectEnvironment(function () {
 
 $app->bindInstallPaths(require __DIR__.'/paths.php');
 
+// DotEnv
+$dotenv = new Dotenv\Dotenv(__DIR__.'/../');
+$dotenv->load();
+
 /*
 |--------------------------------------------------------------------------
 | Load The Application

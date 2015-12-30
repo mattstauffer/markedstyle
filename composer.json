@@ -5,7 +5,8 @@
 	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.1.*",
-		"doctrine/dbal": "^2.5"
+		"doctrine/dbal": "^2.5",
+		"vlucas/phpdotenv": "^2.2"
 	},
 	"autoload": {
 		"classmap": [
