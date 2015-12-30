@@ -24,10 +24,10 @@ $app = new Illuminate\Foundation\Application;
 |
 */
 
-	$env = $app->detectEnvironment(array(
-		'production' => array('unwavering-chasm'),
-		'local' => array('homestead', '.local'),
-	));
+$env = $app->detectEnvironment(function () {
+    // Can you get any lazier? I contend you cannot
+    return strpos(gethostname(), '.local') !== false ? 'local' : 'production';
+});
 /*
 |--------------------------------------------------------------------------
 | Bind Paths

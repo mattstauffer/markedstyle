@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		{{ stylesheet() }}
 		<title>Markedstyle</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 		<![endif]-->
+        <link href="/css/app.css" rel="stylesheet">
 	</head>
 	<body>
 		@include('partials.header')
 		@yield('content')
 		@include('partials.footer')
 
-		{{ script('vendor/jquery-2.0.3.min.js') }}
-		{{ script('main.js') }}
+        <script src="/js/vendor/jquery-2.0.3.min.js"></script>
+        <script src="/js/main.js"></script>
 
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

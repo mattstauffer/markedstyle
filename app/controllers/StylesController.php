@@ -104,6 +104,7 @@ class StylesController extends BaseController
 			$style->source = Input::get('source');
 			$style->format = 'css'; // For now...
 			$style->author_id = Auth::user()->id;
+            $style->visits = 0;
 			// Add author
 			$style->save();
 
@@ -247,7 +248,7 @@ class StylesController extends BaseController
 			return '';
 		}
 
-		$preview = File::get('../app/views/styles/preview.html');
+		$preview = File::get(__DIR__ . '/../../app/views/styles/preview.html');
 
 		return View::make('styles.preview')
 			->with('style', $style)

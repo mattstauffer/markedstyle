@@ -1,5 +1,4 @@
 <?php
-
 return array(
 
 	/*
@@ -57,7 +56,7 @@ return array(
 			'host'      => 'localhost',
 			'database'  => 'markedstyle',
 			'username'  => 'root',
-			'password'  => 'root',
+			'password'  => '',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

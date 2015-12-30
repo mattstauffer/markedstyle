@@ -105,14 +105,7 @@ return array(
 		'Illuminate\Translation\TranslationServiceProvider',
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
-		'Illuminate\Workbench\WorkbenchServiceProvider',
-		'Way\Generators\GeneratorsServiceProvider',
-		'Way\Console\GuardLaravelServiceProvider',
-		'Juy\Profiler\Providers\ProfilerServiceProvider',
-		'Kmd\Logviewer\LogviewerServiceProvider',
-		'Rtablada\PackageInstaller\PackageInstallerServiceProvider',
-		'Bugsnag\BugsnagLaravel\BugsnagLaravelServiceProvider',
-
+		'Illuminate\Workbench\WorkbenchServiceProvider'
 	),
 
 	/*
